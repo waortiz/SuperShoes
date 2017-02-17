@@ -1,0 +1,12 @@
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\bin\Debug\SuperShoes.Repositories.dll.config
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\bin\Debug\SuperShoes.Repositories.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\bin\Debug\SuperShoes.Repositories.pdb
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\bin\Debug\EntityFramework.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\bin\Debug\EntityFramework.SqlServer.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\bin\Debug\SuperShoes.Domain.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\bin\Debug\SuperShoes.Domain.pdb
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\bin\Debug\EntityFramework.xml
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\bin\Debug\EntityFramework.SqlServer.xml
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\obj\Debug\SuperShoes.Repositories.csprojResolveAssemblyReference.cache
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\obj\Debug\SuperShoes.Repositories.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\obj\Debug\SuperShoes.Repositories.pdb

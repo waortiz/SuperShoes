@@ -1,0 +1,5 @@
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Domain\bin\Debug\SuperShoes.Domain.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Domain\bin\Debug\SuperShoes.Domain.pdb
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Domain\obj\Debug\SuperShoes.Domain.csprojResolveAssemblyReference.cache
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Domain\obj\Debug\SuperShoes.Domain.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Domain\obj\Debug\SuperShoes.Domain.pdb

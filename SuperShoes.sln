@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperShoes.Api", "SuperShoe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperShoes", "SuperShoes\SuperShoes.csproj", "{800E53F9-FE66-40A6-96EA-341A0BEFDAAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperShoes.Repositories", "SuperShoes.Repositories\SuperShoes.Repositories.csproj", "{2F3EBD68-A714-457C-96EA-EB28E71CE744}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperShoes.Domain", "SuperShoes.Domain\SuperShoes.Domain.csproj", "{6E94DC5A-67B9-40FE-BAC9-E4EFB767AE58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{800E53F9-FE66-40A6-96EA-341A0BEFDAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{800E53F9-FE66-40A6-96EA-341A0BEFDAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{800E53F9-FE66-40A6-96EA-341A0BEFDAAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F3EBD68-A714-457C-96EA-EB28E71CE744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F3EBD68-A714-457C-96EA-EB28E71CE744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F3EBD68-A714-457C-96EA-EB28E71CE744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F3EBD68-A714-457C-96EA-EB28E71CE744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E94DC5A-67B9-40FE-BAC9-E4EFB767AE58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E94DC5A-67B9-40FE-BAC9-E4EFB767AE58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E94DC5A-67B9-40FE-BAC9-E4EFB767AE58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E94DC5A-67B9-40FE-BAC9-E4EFB767AE58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
