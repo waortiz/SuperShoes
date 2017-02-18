@@ -1,35 +1,63 @@
-﻿using SuperShoes.Domain;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SuperShoes.Repositories
+﻿namespace SuperShoes.Repositories
 {
+    using Exceptions;
+    using SuperShoes.Domain;
+    using System.Collections.Generic;
+    using System.Linq;
+
+    /// <summary>
+    /// Class for managing the repository of the store.
+    /// </summary>
     public class StoreRepository : BaseRepository, IStoreRepository
     {
+        /// <summary>
+        /// Constructor of the class.
+        /// </summary>
+        /// <param name="superShoesContext">Context for the repository.</param>
         public StoreRepository(SuperShoesContext superShoesContext) : base(superShoesContext)
         {
 
         }
 
-        public IQueryable<Store> GetStores()
+        /// <summary>
+        /// Get all the stores in the respository.
+        /// </summary>
+        /// <returns>List the stores in the respository.</returns>
+        public List<Store> GetStores()
         {
-            return superShoesContext.Stores.AsQueryable();
+            return superShoesContext.Stores.ToList();
         }
 
-        public IQueryable<Article> GetArticles(int storeId)
+        /// <summary>
+        /// Get a store.
+        /// </summary>
+        /// <param name="storeId">Id of the store to get.</param>
+        /// <returns>An article.</returns>
+        public Store GetStore(int storeId)
         {
-            return superShoesContext.Articles.Where(a=>a.Store.StoreId == storeId);
+            var current = superShoesContext.Stores.Find(storeId);
+            if (current == null)
+            {
+                throw new RecordNotFoudException(string.Format("Store {0} not found", storeId));
+            }
+
+            return current;
         }
 
+        /// <summary>
+        /// Save a store.
+        /// </summary>
+        /// <param name="store">Store to save.</param>
         public void SaveStore(Store store)
         {
             superShoesContext.Stores.Add(store);
             superShoesContext.SaveChanges();
         }
 
+        /// <summary>
+        /// Update a store.
+        /// </summary>
+        /// <param name="store">Store to update.</param>
         public void UpdateStore(Store store)
         {
             var current = superShoesContext.Stores.Find(store.StoreId);
@@ -40,18 +68,26 @@ namespace SuperShoes.Repositories
             }
             else
             {
-                superShoesContext.Stores.Add(store);
+                throw new RecordNotFoudException(string.Format("Store {0} not found", store.StoreId));
             }
 
             superShoesContext.SaveChanges();
         }
 
+        /// <summary>
+        /// Delete a store by id.
+        /// </summary>
+        /// <param name="storeId">Id of the store.</param>
         public void DeleteStore(int storeId)
         {
             var current = superShoesContext.Stores.Find(storeId);
             if (current != null)
             {
                 superShoesContext.Stores.Remove(current);
+            }
+            else
+            {
+                throw new RecordNotFoudException(string.Format("Store {0} not found", storeId));
             }
         }
     }

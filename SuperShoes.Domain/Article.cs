@@ -14,7 +14,7 @@
         /// <summary>
         /// Gets or sets the identifier of the article.
         /// </summary>
-        public int IdArticle { get; set; }
+        public int ArticleId { get; set; }
 
         /// <summary>
         /// Gets or sets the name of the article.

@@ -16,7 +16,7 @@
     <RootNamespace>SuperShoes.Api</RootNamespace>
     <AssemblyName>SuperShoes.Api</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -133,11 +133,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ErrorResponse.cs" />
+    <Compile Include="Models\StoreResponse.cs" />
+    <Compile Include="Models\StoresResponse.cs" />
+    <Compile Include="Models\ArticlesResponse.cs" />
+    <Compile Include="Models\ArticleResponse.cs" />
+    <Compile Include="Models\Response.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\SuperShoes.Domain\SuperShoes.Domain.csproj">
       <Project>{6e94dc5a-67b9-40fe-bac9-e4efb767ae58}</Project>
@@ -167,7 +171,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>58949</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:58949/</IISUrl>
+          <IISUrl>http://localhost/SuperShoes.Api</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

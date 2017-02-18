@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Web.Http;
-
-namespace SuperShoes.Backend.Controllers
+﻿namespace SuperShoes.Backend.Controllers
 {
+    using System.Collections.Generic;
+    using System.Web.Http;
+
     public class TestController : ApiController
     {
         [HttpGet]
