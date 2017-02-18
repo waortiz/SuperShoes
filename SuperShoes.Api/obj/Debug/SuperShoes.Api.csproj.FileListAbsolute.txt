@@ -56,3 +56,5 @@ D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\EntityFramework.xm
 D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\EntityFramework.SqlServer.xml
 D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\Ninject.xml
 D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\Ninject.Web.Common.xml
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\SuperShoes.Services.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\SuperShoes.Services.pdb

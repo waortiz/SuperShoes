@@ -145,6 +145,10 @@
       <Project>{2f3ebd68-a714-457c-96ea-eb28e71ce744}</Project>
       <Name>SuperShoes.Repositories</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SuperShoes.Services\SuperShoes.Services.csproj">
+      <Project>{854f89d5-77cd-4587-9275-d2c89d4dc5e8}</Project>
+      <Name>SuperShoes.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

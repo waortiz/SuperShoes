@@ -11,6 +11,7 @@ namespace SuperShoes.Api.App_Start
     using Ninject;
     using Ninject.Web.Common;
     using Repositories;
+    using Services;
 
     public static class NinjectWebCommon 
     {
@@ -65,6 +66,8 @@ namespace SuperShoes.Api.App_Start
             kernel.Bind<SuperShoesContext>().To<SuperShoesContext>().InRequestScope();
             kernel.Bind<IStoreRepository>().To<StoreRepository>();
             kernel.Bind<IArticleRepository>().To<ArticleRepository>();
-        }        
+            kernel.Bind<IStoreService>().To<StoreService>();
+            kernel.Bind<IArticleService>().To<ArticleService>();
+        }
     }
 }
