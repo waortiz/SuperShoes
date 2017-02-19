@@ -1,0 +1,13 @@
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Services\bin\Debug\SuperShoes.Services.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Services\bin\Debug\SuperShoes.Services.pdb
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Services\bin\Debug\SuperShoes.Domain.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Services\bin\Debug\SuperShoes.Repositories.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Services\bin\Debug\EntityFramework.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Services\bin\Debug\SuperShoes.Domain.pdb
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Services\bin\Debug\SuperShoes.Repositories.pdb
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Services\bin\Debug\EntityFramework.xml
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Services\obj\Debug\SuperShoes.Services.csprojResolveAssemblyReference.cache
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Services\obj\Debug\SuperShoes.Services.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Services\obj\Debug\SuperShoes.Services.pdb
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Services\bin\Debug\Newtonsoft.Json.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Services\bin\Debug\Newtonsoft.Json.xml
