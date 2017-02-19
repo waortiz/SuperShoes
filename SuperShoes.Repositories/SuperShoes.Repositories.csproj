@@ -54,6 +54,19 @@
     <Compile Include="BaseRepository.cs" />
     <Compile Include="IArticleRepository.cs" />
     <Compile Include="Exceptions\RecordNotFoudException.cs" />
+    <Compile Include="Migrations\201702191304095_InitialCreate.cs" />
+    <Compile Include="Migrations\201702191304095_InitialCreate.Designer.cs">
+      <DependentUpon>201702191304095_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702191411213_Change of the data type.cs" />
+    <Compile Include="Migrations\201702191411213_Change of the data type.Designer.cs">
+      <DependentUpon>201702191411213_Change of the data type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702191441320_New field in Article.cs" />
+    <Compile Include="Migrations\201702191441320_New field in Article.Designer.cs">
+      <DependentUpon>201702191441320_New field in Article.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="StoreRepository.cs" />
     <Compile Include="IStoreRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,6 +83,17 @@
       <Project>{6E94DC5A-67B9-40FE-BAC9-E4EFB767AE58}</Project>
       <Name>SuperShoes.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702191304095_InitialCreate.resx">
+      <DependentUpon>201702191304095_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702191411213_Change of the data type.resx">
+      <DependentUpon>201702191411213_Change of the data type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702191441320_New field in Article.resx">
+      <DependentUpon>201702191441320_New field in Article.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

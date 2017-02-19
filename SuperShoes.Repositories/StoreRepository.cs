@@ -25,7 +25,14 @@
         /// <returns>List the stores in the respository.</returns>
         public List<Store> GetStores()
         {
-            return superShoesContext.Stores.ToList();
+            List<Store> stores = new List<Store>();
+            var currentStores = superShoesContext.Stores.ToList();
+            foreach(Store store in currentStores)
+            {
+                stores.Add(new Store() { Address = store.Address, Name = store.Name, StoreId = store.StoreId });
+            }
+
+            return stores;
         }
 
         /// <summary>
@@ -41,7 +48,7 @@
                 throw new RecordNotFoudException(string.Format("Store {0} not found", storeId));
             }
 
-            return current;
+            return new Store() { Address = current.Address, Name = current.Name, StoreId = current.StoreId };
         }
 
         /// <summary>
@@ -84,6 +91,7 @@
             if (current != null)
             {
                 superShoesContext.Stores.Remove(current);
+                superShoesContext.SaveChanges();
             }
             else
             {

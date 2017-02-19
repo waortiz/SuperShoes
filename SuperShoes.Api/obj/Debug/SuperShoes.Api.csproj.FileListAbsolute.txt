@@ -58,3 +58,10 @@ D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\Ninject.xml
 D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\Ninject.Web.Common.xml
 D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\SuperShoes.Services.dll
 D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\SuperShoes.Services.pdb
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\Ninject.Web.WebApi.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\Ninject.Web.WebApi.xml
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\Ninject.Web.WebApi.WebHost.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\Microsoft.Practices.ServiceLocation.xml
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Api\bin\Ninject.Web.WebApi.WebHost.xml

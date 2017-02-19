@@ -25,9 +25,16 @@
         /// <returns>List of the articles.</returns>
         public List<Article> GetArticles()
         {
-            return superShoesContext.Articles.ToList();
+            List<Article> articles = new List<Article>();
+            var currentArticles = superShoesContext.Articles.ToList();
+            foreach (Article article in currentArticles)
+            {
+                articles.Add(new Article() { Description = article.Description, Name = article.Name, ArticleId = article.ArticleId, Price = article.Price, TotalInShelf = article.TotalInShelf, TotalInVault = article.TotalInVault, StoreName = article.Store.Name });
+            }
+
+            return articles;
         }
-        
+
         /// <summary>
         /// Get all the articles of the one store.
         /// </summary>
@@ -35,7 +42,14 @@
         /// <returns>List the articles of the one store.</returns>
         public List<Article> GetArticles(int storeId)
         {
-            return superShoesContext.Articles.Where(a=>a.Store.StoreId == storeId).ToList();
+            List<Article> articles = new List<Article>();
+            var currentArticles = superShoesContext.Articles.Where(a => a.Store.StoreId == storeId).ToList();
+            foreach (Article article in currentArticles)
+            {
+                articles.Add(new Article() { Description = article.Description, Name = article.Name, ArticleId = article.ArticleId, Price = article.Price, TotalInShelf = article.TotalInShelf, TotalInVault = article.TotalInVault, StoreName = article.Store.Name });
+            }
+
+            return articles;
         }
 
         /// <summary>
@@ -51,7 +65,7 @@
                 throw new RecordNotFoudException(string.Format("Article {0} not found", articleId));
             }
 
-            return current;
+            return new Article() { Description = current.Description, Name = current.Name, ArticleId = current.ArticleId, Price = current.Price, TotalInShelf = current.TotalInShelf, TotalInVault = current.TotalInVault, StoreName = current.Store.Name };
         }
         
         /// <summary>
@@ -97,6 +111,7 @@
             if (current != null)
             {
                 superShoesContext.Articles.Remove(current);
+                superShoesContext.SaveChanges();
             }
             else
             {

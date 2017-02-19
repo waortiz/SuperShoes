@@ -7,10 +7,11 @@ namespace SuperShoes.Backend.App_Start
         public static void Configure(HttpConfiguration config)
         {
             config.MapHttpAttributeRoutes();
-
+            config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling
+= Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "services/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }

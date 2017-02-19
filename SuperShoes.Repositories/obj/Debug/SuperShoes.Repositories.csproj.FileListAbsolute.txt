@@ -10,3 +10,9 @@ D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\bin\Debug\Ent
 D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\obj\Debug\SuperShoes.Repositories.csprojResolveAssemblyReference.cache
 D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\obj\Debug\SuperShoes.Repositories.dll
 D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\obj\Debug\SuperShoes.Repositories.pdb
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\obj\Debug\SuperShoes.Repositories.Migrations.InitialCreate.resources
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\obj\Debug\SuperShoes.Repositories.csproj.GenerateResource.Cache
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\obj\Debug\SuperShoes.Repositories.Migrations.Changeofthedatatype.resources
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\bin\Debug\Newtonsoft.Json.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\bin\Debug\Newtonsoft.Json.xml
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes.Repositories\obj\Debug\SuperShoes.Repositories.Migrations.NewfieldinArticle.resources
