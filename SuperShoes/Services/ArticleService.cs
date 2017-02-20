@@ -126,7 +126,8 @@
         public void UpdateArticle(Article article)
         {
             RestRequest request = new RestRequest("services/article", Method.PUT) { RequestFormat = DataFormat.Json };
-            request.AddJsonBody(article);
+            var json = JsonConvert.SerializeObject(article);
+            request.AddParameter("application/json", json, ParameterType.RequestBody);
             var result = this.client.Execute<Response>(request);
             if (result.Data == null)
             {
