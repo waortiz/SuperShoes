@@ -52,3 +52,12 @@ D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes\bin\System.Web.WebPages.Ra
 D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes\obj\Debug\SuperShoes.csprojResolveAssemblyReference.cache
 D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes\obj\Debug\SuperShoes.dll
 D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes\obj\Debug\SuperShoes.pdb
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes\bin\Ninject.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes\bin\Ninject.Web.Common.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes\bin\Ninject.Web.Mvc.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes\bin\RestSharp.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes\bin\WebActivatorEx.dll
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes\bin\Ninject.xml
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes\bin\Ninject.Web.Common.xml
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes\bin\Ninject.Web.Mvc.xml
+D:\Desarrollo\DotNet\SuperShoes\SuperShoes\SuperShoes\bin\RestSharp.xml

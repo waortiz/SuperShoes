@@ -92,6 +92,8 @@
                 current.Price = article.Price;
                 current.TotalInShelf = article.TotalInShelf;
                 current.TotalInVault = article.TotalInVault;
+                var store = superShoesContext.Stores.Find(article.Store.StoreId);
+                current.Store = store;
             }
             else
             {

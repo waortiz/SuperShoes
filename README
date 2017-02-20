@@ -1,2 +1,6 @@
 # SuperShoes
 Web Application to take inventory control of the shoes available in the store
+
+Configuration of the Identity
+
+The Web.Api project runs with an identity with full access to Sql Server. It must set user and password. <identity impersonate="true" userName="XXXX" password="XXXX" />

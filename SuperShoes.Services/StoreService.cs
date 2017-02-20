@@ -9,7 +9,7 @@
     public class StoreService : IStoreService
     {
         /// <summary>
-        /// Represents the repository for the article.
+        /// Represents the repository for the store.
         /// </summary>
         IStoreRepository repository;
 

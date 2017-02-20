@@ -2,7 +2,6 @@
 {
     using SuperShoes.Domain;
     using System.Collections.Generic;
-    using System.Linq;
 
     /// <summary>
     /// Information of the article repository interface.

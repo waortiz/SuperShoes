@@ -3,14 +3,37 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    <title>@ViewBag.Title - Super Shoes</title>
     <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
 </head>
 <body>
-    <div class="container-fluid">
-        @RenderBody()
+    <h1 style="font-size:40pt; color:dodgerblue; text-align:center">Super Shoes</h1>
+
+    <div style="width:10%">
+        <ul>
+            <li style="list-style-type: none;">
+                <a href='#'><span style="color:blue;font-size:20pt;font-weight:bold"><b>Stores</b></span></a>
+                <ul>
+                    <li style="list-style-type: none;"><a href='~/Store'><span>List</span></a></li>
+                    <li style="list-style-type: none;"><a href='~/Store/Create'><span>Create</span></a></li>
+                </ul>
+            </li>
+            <li style="list-style-type: none;">
+                <a href='#'><span style="color:blue;font-size:20pt;font-weight:bold"><b>Articles</b></span></a>
+                <ul style="list-style-type: none;">
+                    <li style="list-style-type: none;"><a href="~/Article"><span>List</span></a></li>
+                    <li style="list-style-type: none;"><a href='~/Article/Create'><span>Create</span></a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
+    <div class="container-fluid" style="width:70%">
+        @RenderBody()
+    </div>
+    <div style="background-color:lightgray;">
+        <center><p style="text-align:center; padding-top:10px; padding-bottom:10px">© 2017 Super Shoes. Todos los Derechos Reservados.</p></center>
+    </div>
     @RenderSection("scripts", false)
 </body>
 </html>
