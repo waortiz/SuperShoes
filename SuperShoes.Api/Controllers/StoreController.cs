@@ -1,12 +1,14 @@
 ﻿namespace SuperShoes.Api.Controllers
 {
     using Domain;
+    using Filters;
     using Models;
     using Repositories.Exceptions;
     using SuperShoes.Services;
     using System;
     using System.Web.Http;
 
+    [IdentityBasicAuthentication]
     public class StoreController : ApiController
     {
         /// <summary>

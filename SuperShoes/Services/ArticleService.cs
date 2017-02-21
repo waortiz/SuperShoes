@@ -6,6 +6,7 @@
     using System;
     using System.Collections.Generic;
     using System.Configuration;
+    using System.Text;
 
     public class ArticleService : IArticleService
     {
@@ -30,6 +31,7 @@
         {
             List<Article> articles = new List<Article>();
             RestRequest request = new RestRequest("services/article", Method.GET) { RequestFormat = DataFormat.Json};
+            request.AddHeader("Authorization", "Basic " + Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", ConfigurationManager.AppSettings["APIUser"], ConfigurationManager.AppSettings["APIPassword"]))));
             var result = this.client.Execute<ArticlesResponse>(request);
             if(result.Data == null)
             {
@@ -56,6 +58,7 @@
         {
             List<Article> articles = new List<Article>();
             RestRequest request = new RestRequest("services/article/store/" + storeId, Method.GET) { RequestFormat = DataFormat.Json };
+            request.AddHeader("Authorization", "Basic " + Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", ConfigurationManager.AppSettings["APIUser"], ConfigurationManager.AppSettings["APIPassword"]))));
             var result = this.client.Execute<ArticlesResponse>(request);
             if (result.Data == null)
             {
@@ -82,6 +85,7 @@
         {
             Article article = new Article();
             RestRequest request = new RestRequest("services/article" + articleId, Method.GET) { RequestFormat = DataFormat.Json };
+            request.AddHeader("Authorization", "Basic " + Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", ConfigurationManager.AppSettings["APIUser"], ConfigurationManager.AppSettings["APIPassword"]))));
             var result = this.client.Execute<ArticleResponse>(request);
             if (result.Data == null)
             {
@@ -106,6 +110,7 @@
         public void SaveArticle(Article article)
         {
             RestRequest request = new RestRequest("services/article", Method.POST) { RequestFormat = DataFormat.Json };
+            request.AddHeader("Authorization", "Basic " + Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", ConfigurationManager.AppSettings["APIUser"], ConfigurationManager.AppSettings["APIPassword"]))));
             var json = JsonConvert.SerializeObject(article);
             request.AddParameter("application/json", json, ParameterType.RequestBody);
             var result = this.client.Execute<Response>(request);
@@ -126,6 +131,7 @@
         public void UpdateArticle(Article article)
         {
             RestRequest request = new RestRequest("services/article", Method.PUT) { RequestFormat = DataFormat.Json };
+            request.AddHeader("Authorization", "Basic " + Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", ConfigurationManager.AppSettings["APIUser"], ConfigurationManager.AppSettings["APIPassword"]))));
             var json = JsonConvert.SerializeObject(article);
             request.AddParameter("application/json", json, ParameterType.RequestBody);
             var result = this.client.Execute<Response>(request);
@@ -146,6 +152,7 @@
         public void DeleteArticle(int articleId)
         {
             RestRequest request = new RestRequest("services/article" + articleId, Method.DELETE) { RequestFormat = DataFormat.Json };
+            request.AddHeader("Authorization", "Basic " + Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", ConfigurationManager.AppSettings["APIUser"], ConfigurationManager.AppSettings["APIPassword"]))));
             var result = this.client.Execute<Response>(request);
             if (result.Data == null)
             {

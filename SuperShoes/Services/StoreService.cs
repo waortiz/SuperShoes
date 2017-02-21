@@ -5,6 +5,8 @@
     using RestSharp;
     using System.Configuration;
     using Api.Models;
+    using System.Net.Http.Headers;
+    using System.Text;
 
     public class StoreService : IStoreService
     {
@@ -29,6 +31,7 @@
         {
             List<Store> stores = new List<Store>();
             RestRequest request = new RestRequest("services/store", Method.GET) { RequestFormat = DataFormat.Json };
+            request.AddHeader("Authorization", "Basic " + Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", ConfigurationManager.AppSettings["APIUser"], ConfigurationManager.AppSettings["APIPassword"]))));
             var result = this.client.Execute<StoresResponse>(request);
             if (result.Data == null)
             {
@@ -53,6 +56,7 @@
         public void SaveStore(Store store)
         {
             RestRequest request = new RestRequest("services/store", Method.POST) { RequestFormat = DataFormat.Json };
+            request.AddHeader("Authorization", "Basic " + Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", ConfigurationManager.AppSettings["APIUser"], ConfigurationManager.AppSettings["APIPassword"]))));
             request.AddBody(store);
             var result = this.client.Execute<Response>(request);
             if (result.Data == null)
@@ -72,6 +76,7 @@
         public void UpdateStore(Store store)
         {
             RestRequest request = new RestRequest("services/store", Method.PUT) { RequestFormat = DataFormat.Json };
+            request.AddHeader("Authorization", "Basic " + Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", ConfigurationManager.AppSettings["APIUser"], ConfigurationManager.AppSettings["APIPassword"]))));
             request.AddBody(store);
             var result = this.client.Execute<Response>(request);
             if (result.Data == null)
@@ -91,6 +96,7 @@
         public void DeleteStore(int storeId)
         {
             RestRequest request = new RestRequest("services/store" + storeId, Method.DELETE) { RequestFormat = DataFormat.Json };
+            request.AddHeader("Authorization", "Basic " + Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", ConfigurationManager.AppSettings["APIUser"], ConfigurationManager.AppSettings["APIPassword"]))));
             var result = this.client.Execute<Response>(request);
             if (result.Data == null)
             {
@@ -110,6 +116,7 @@
         {
             Store store = new Store();
             RestRequest request = new RestRequest("services/store" + storeId, Method.GET) { RequestFormat = DataFormat.Json };
+            request.AddHeader("Authorization", "Basic " + Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes(string.Format("{0}:{1}", ConfigurationManager.AppSettings["APIUser"], ConfigurationManager.AppSettings["APIPassword"]))));
             var result = this.client.Execute<StoreResponse>(request);
             if (result.Data == null)
             {
